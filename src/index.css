@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.steps{
+    width: 600px;
+    background-color: #f7f7f7;
+    margin: 100px auto;
+    padding: 44px 88px;
+
+}
+.numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.numbers > div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.numbers .active{
+    background-color: #7950f2;
+    color: white;
+}
+.message{
+    padding: 24px 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    border: none;
+    padding: 8px 24px;
+    border-radius: 16px;
+    background-color: #7950f2;
+    color: #fff;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #6240c8;
 }
